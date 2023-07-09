@@ -20,3 +20,7 @@ class Cliente:
     def anos_desde_cadastro(self):
         data_atual = datetime.now()
         return data_atual.year - self.data_cadastro.year    
+    
+    def realizar_transacao(self, conta, transacao):
+        transacao.registrar(conta)
+ 
